@@ -38,7 +38,64 @@ section, .section, .hero, .about, .contact-section, .project-grid, .services-sec
   padding: 0 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
 
+  section,
+  .hero,
+  .about,
+  .contact-section,
+  .projects,
+  .services-section,
+  .skills-section,
+  .tools,
+  .project-grid,
+  .contact-container,
+  .book-search,
+  .project-card,
+  .contact-info,
+  .contact-form {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .hero-content,
+  .about-content,
+  .skills-grid,
+  .tool-grid,
+  .services-grid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 
 body {
@@ -79,22 +136,12 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #000;
-  color: #fff;
-}
 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0d0d0d;
-  color: #fff;
 }
 a {
   text-decoration: none;
