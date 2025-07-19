@@ -5,6 +5,25 @@
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 768px) {
+  section,
+  .hero-content,
+  .about-content,
+  .services-section,
+  .skills-section,
+  .tools,
+  .projects,
+  .contact-section {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+
+  .hero-text {
+    text-align: center;
+  }
+}
+
 
 a {
   text-decoration: none;
@@ -54,7 +73,7 @@ body {
   color: #3a86ff;
 }
 
-/* Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +102,6 @@ a {
   color: inherit;
 }
 
-/* Navbar */
 .navbar {
   position: fixed;
   width: 100%;
@@ -125,7 +143,6 @@ a {
   width: 100%;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -133,7 +150,6 @@ a {
   color: #fff;
 }
 
-/* Responsive Navbar */
 @media screen and (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -161,7 +177,6 @@ a {
 }
 
 
-/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
@@ -245,7 +260,6 @@ a {
   color: #ccc;
 }
 
-/* Social Icons */
 .social-icons {
   display: flex;
   gap: 15px;
@@ -273,7 +287,7 @@ a {
   color: #000;
 }
 
-/* Hire Me Button */
+
 .hire-me {
   padding: 10px 25px;
   border: 1px solid #7928ca;
@@ -338,7 +352,7 @@ a {
   cursor: pointer;
 }
 
-/* Responsive media query */
+
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
@@ -499,7 +513,6 @@ a {
   font-weight: 500;
 }
 
-/* Hover animation */
 .tool-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
@@ -669,7 +682,7 @@ a {
   opacity: 0.9;
 }
 
-/* Responsive */
+
 @media screen and (max-width: 768px) {
   .contact-container {
     grid-template-columns: 1fr;
@@ -725,7 +738,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Skills */
 .skills .skill {
   margin-bottom: 1.5rem;
 }
