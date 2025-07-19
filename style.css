@@ -31,7 +31,6 @@ section, .section, .hero, .about, .contact-section, .project-grid, .services-sec
   .about,
   .contact-section,
   .services-section,
-  .tools,
   .contact-container,
   .book-search,
   .contact-info,
@@ -44,8 +43,6 @@ section, .section, .hero, .about, .contact-section, .project-grid, .services-sec
 
   .hero-content,
   .about-content,
-  .skills-grid,
-  .tool-grid,
   .services-grid {
     padding-left: 0 !important;
     padding-right: 0 !important;
