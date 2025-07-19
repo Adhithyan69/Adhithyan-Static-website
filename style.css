@@ -34,11 +34,10 @@ h1, h2, h3 {
   color: #fff;
 }
 
-section {
-  padding: 4rem 2rem;
-  max-width: 1100px;
-  margin: auto;
+section, .section, .hero, .about, .contact-section, .project-grid, .services-section, .skills-section {
+  padding: 0 20px;
 }
+
 
 
 
@@ -699,7 +698,7 @@ footer {
   padding: 2rem;
   color: #8b949e;
 }
-/* Skills Section (Like Screenshot) */
+
 .skills-section {
   padding: 4rem 2rem;
   background-color: #0d1117;
