@@ -710,11 +710,14 @@ footer {
 }
 
 .skills-section {
-  margin:1em;
-  padding: 4rem 2rem;
+  margin: 1em;
+  padding: 4rem 2rem; /* Existing padding */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   background-color: #0d1117;
   text-align: center;
 }
+
 
 .section-title {
   font-size: 2.5rem;
