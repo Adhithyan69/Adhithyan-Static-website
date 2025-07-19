@@ -13,7 +13,7 @@
   .hero-content {
     flex-direction: column;
     align-items: center;
-    padding-left: 0; /* Remove fixed wide padding */
+    padding-left: 1.5em; /* Remove fixed wide padding */
     padding-right: 0;
     width: 100%;
     box-sizing: border-box; /* Prevent overflow */
