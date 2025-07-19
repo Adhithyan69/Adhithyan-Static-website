@@ -31,12 +31,9 @@ section, .section, .hero, .about, .contact-section, .project-grid, .services-sec
   .about,
   .contact-section,
   .services-section,
-  .skills-section,
   .tools,
-  .project-grid,
   .contact-container,
   .book-search,
-  .project-card,
   .contact-info,
   .contact-form {
     padding-left: 0.2em !important;
