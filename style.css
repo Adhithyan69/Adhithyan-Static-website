@@ -103,20 +103,6 @@ body {
   color: #3a86ff;
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 a {
   text-decoration: none;
   color: inherit;
@@ -724,6 +710,7 @@ footer {
 }
 
 .skills-section {
+  margin:1em;
   padding: 4rem 2rem;
   background-color: #0d1117;
   text-align: center;
