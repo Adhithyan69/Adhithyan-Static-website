@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Dark Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Adhithyan</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="assets/adhi1_png.png" alt="Profile" />
+    </div>
+    <div class="hero-text">
+      <h1>Hi, It's <span>Adhithyan</span></h1>
+      <h2>I'm a <span>Flutter developer</span></h2>
+      <p>
+       Hey there! I build beautiful apps using Flutter. Clean code, smooth UX, and modern design are what I aim for in every project..
+      </p>
+     <div class="social-icons">
+  <a href="https://www.linkedin.com/in/adhithyan-p-b-856190330/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://github.com/Adhithyan69" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/_adhitxyn_/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="hire-me">Hire Me</button>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-img">
+      <img src="assets/about_img.jpg" alt="Adhithyan">
+    </div>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>I’m a motivated Flutter Developer with a passion for crafting responsive, high-performance mobile applications. With a background in software development and hands-on experience using Flutter and Dart, I specialize in building seamless cross-platform experiences that prioritize both performance and design.
+I'm skilled in integrating APIs, managing app state efficiently, and collaborating within agile teams to bring ideas to life. I’m always excited to take on new challenges, solve real-world problems, and contribute to innovative, user-focused projects..</p>
+      <div class="about-buttons">
+        <a href="assets/resume.pdf" download class="btn primary ">Download CV</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="services-section">
+  <h2 class="section-title">Services</h2>
+  <p class="section-subtitle">
+    Your idea, my code — let’s build something great together.
+  </p>
+  <div class="services-grid"> 
+     <div class="service-card">
+      <img src="https://img.icons8.com/?size=80&id=szOBoOVU3fvT&format=png"/>
+      <h3>App Developing</h3>
+      <span class="service-underline"></span>
+    </div>
+    <div class="service-card">
+      <img src="assets/capcut.png" alt="Photography"/>
+      <h3>Video editng</h3>
+      <span class="service-underline"></span>
+    </div>
+    <div class="service-card">
+      <img src="https://img.icons8.com/?size=60&id=1FdYDpqhZ86g&format=png" alt="Web Developer"/>
+      <h3>Web Development</h3>
+      <span class="service-underline"></span>
+    </div>
+  
+
+  </div>
+</section>
+
+  <!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <h2 class="section-title">My Skills</h2>
+  <p class="section-subtitle">
+   Crafting efficient solutions through clean code and thoughtful design.
+  </p>
+
+  <div class="skills-grid"> 
+     <div class="skill" data-percent="95">
+      <div class="skill-title">Flutter <span>95%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill" data-percent="90">
+      <div class="skill-title">Dart <span>90%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill" data-percent="75">
+      <div class="skill-title">Video editng<span>75%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill" data-percent="45">
+      <div class="skill-title">HTML/CSS <span>45%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill" data-percent="45">
+      <div class="skill-title">JavaScript <span>45%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill" data-percent="85">
+      <div class="skill-title">Git <span>85%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Tools & Technologies -->
+  <section class="tools">
+  <h2 class="section-title">
+    Tools  & Technologies
+  </h2>
+  <div class="tool-grid">
+     <div class="tool-card">
+      <img src="https://img.icons8.com/?size=80&id=IYQQHplg11Ie&format=png" alt="Flutter">
+      <span>Flutter</span>
+    </div>
+    <div class="tool-card">
+      <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML5">
+      <span>HTML5</span>
+    </div>
+    <div class="tool-card">
+      <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3">
+      <span>CSS3</span>
+    </div>
+    <div class="tool-card">
+      <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript">
+      <span>JavaScript</span>
+    </div>
+    <div class="tool-card">
+      <img src="https://img.icons8.com/color/48/git.png" alt="Git">
+      <span>Git</span>
+    </div>
+    <div class="tool-card">
+      <img src="https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png" alt="VS Code">
+      <span>VS Code</span>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/fixit_project.png" alt="Fixit: Service App" />
+      </div>
+      <div class="project-overlay">
+        <h3>Fixit: Service App</h3>
+        <p>Developed Fixit, a user-friendly service app designed to connect users with service providers seam
+lessly.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/soften_project.png" alt="Enquiry App for Soften Technologies" />
+      </div>
+      <div class="project-overlay">
+        <h3>Enquiry App for Soften Technologies</h3>
+        <p>Developed an inquiry app for Soften Technologies with an intuitive platform for managing inquiries.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/attendance_ui.png" alt="Flutter App UI" />
+      </div>
+      <div class="project-overlay">
+        <h3>Attendance App UI</h3>
+        <p>Clean Flutter-based mobile UI designs for learning apps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Mini Projects Section -->
+<section id="mini-projects" class="projects">
+  <h2>Mini Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/news_app.png" alt="News App" />
+      </div>
+      <div class="project-overlay">
+        <h3>News App</h3>
+        <p>A Flutter app that fetches real-time news using the News API and allows users to bookmark articles for later reading.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/note_app.png" alt="Notes App" />
+      </div>
+      <div class="project-overlay">
+        <h3>Notes App</h3>
+        <p>Minimal notes application with local storage and responsive layout.</p>
+      </div>
+    </div>
+        <div class="project-card">
+      <div class="project-image">
+        <img src="assets/book_search_app.jpg" alt="Book Search App" />
+      </div>
+      <div class="project-overlay">
+        <h3>Book Search App</h3>
+        <p>A Flutter application that allows users to search for books using the Google Books API. It features a clean UI, real-time search, and displays essential book details such as title, author, thumbnail, and publication year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2 class="contact-title">Get In <span class="gradient-text">Touch</span></h2>
+  <div class="contact-container">
+    
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>
+        Feel free to reach out to me for any questions or opportunities. I’m always open to discussing new projects.
+      </p>
+      <div class="info-item">
+        <img src="https://img.icons8.com/fluency/24/marker.png"/>
+        <span>palakkad, kerala</span>
+      </div>
+      <div class="info-item">
+        <img src="https://img.icons8.com/fluency/24/email.png"/>
+        <span>aadhiadhithyan001@gmail.com</span>
+      </div>
+      <div class="info-item">
+        <img src="https://img.icons8.com/fluency/24/phone.png"/>
+        <span>+91 7902262171</span>
+      </div>
+      <h4>Follow Me</h4>
+    
+      <div class="social-icons">
+  <a href="https://www.linkedin.com/in/adhithyan-p-b-856190330/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://github.com/Adhithyan69" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/_adhitxyn_/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <form name="submit-to-google-sheet" class="contact-form">
+      <div class="form-row">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      </div>
+      <input type="text" name="Subject" placeholder="Subject" required />
+      <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+      <button type="submit" class="btn gradient-btn">Send Message <span>✈</span></button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Adhithyan. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/9ca00d9c1c.js" crossorigin="anonymous"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzdrJx9G70nuHbgu22TVfFAgcJ3fSDeuBXcYBJiWgmGtC6DV8SQXAA6BOHUpE1EeBiU4Q/exec';
+  const form = document.forms['submit-to-google-sheet'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Message sent successfully!");
+        form.reset();
+      })
+      .catch(error => {
+        alert("Error!", error.message);
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+
+</body>
+</html>
