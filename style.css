@@ -568,6 +568,7 @@ a {
 .project-card {
   position: relative;
   overflow: hidden;
+  margin:1em;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   background: rgba(173, 32, 32, 0.02);
