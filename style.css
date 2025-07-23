@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -40,14 +40,12 @@ section {
   color: #fff !important;
 }
 
-/* Navbar */
 body {
   font-family: 'Poppins', sans-serif;
   background: #020303;
   padding-top: 80px;
 }
 
-/* Navbar Customization */
 .navbar {
   background-color: #0d0d0d !important;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -83,7 +81,6 @@ body {
   width: 100%;
 }
 
-/* Hero Section */
 .hero {
   min-height: 80vh;
   background: #09080a;
@@ -177,7 +174,6 @@ body {
   color: #000;
 }
 
-/* Responsive */
 @media (max-width: 991px) {
   .hero-text {
     text-align: center !important;
@@ -194,17 +190,17 @@ body {
     height: auto;
   }
 }
-/* About Section */
+
 #about img {
   max-width: 100%;
-  width: 350px;        /* Controls size on larger screens */
+  width: 350px;        
   height: auto;
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Optional: Center image and reduce size on smaller screens */
+
 @media (max-width: 768px) {
   #about img {
     width: 250px;
@@ -219,7 +215,6 @@ body {
 }
 
 
-/* Services Section */
 #services {
   background: #09090e;
 }
@@ -243,7 +238,6 @@ body {
   border-radius: 2px;
 }
 
-/* Skills Section */
 .skills-section {
   background: #3c3ca8;
   border-radius: 12px;
@@ -271,7 +265,6 @@ body {
 }
 
 
-/* Projects Section */
 .projects {
   padding: clamp(2rem, 5vw, 4rem);
   background: #111;
@@ -366,10 +359,6 @@ body {
   color: #e6daf5;
 }
 
-
-
-
-/* Tools Section */
 .bg-dark {
   background-color: #000000 !important;
 }
@@ -497,7 +486,6 @@ h3, h4 {
   color: #fff !important;
 }
 
-/* Footer */
 footer {
   background: #10131a !important;
   color: #bdbdbd;
@@ -506,7 +494,6 @@ footer {
   letter-spacing: 0.5px;
 }
 
-/* Responsive */
 @media (max-width: 991px) {
   .hero-image img {
     width: 300px;
@@ -553,7 +540,6 @@ footer {
   background-color: #0c0d13; 
 }
 
-/* Form Input Styling */
 .form-control.bg-dark {
   background-color: #1a1d25 !important;
   color: #fff !important;
@@ -574,7 +560,7 @@ footer {
   background-color: #23272f !important;
   color: #fff !important;
 }
-/* Utility: Hide scrollbars for aesthetics */
+
 body::-webkit-scrollbar {
   width: 8px;
   background: #10131a;
