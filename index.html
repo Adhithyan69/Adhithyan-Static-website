@@ -3,160 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modern Dark Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Adhithyan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/9ca00d9c1c.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero { padding: 80px 0; background: #f8f9fa; }
+    .skills-section .skill-bar { background: #e9ecef; height: 10px; border-radius: 5px; overflow: hidden; }
+    .skills-section .skill-fill { height: 100%; background: #0d6efd; }
+    .project-card, .tool-card, .service-card { transition: 0.3s; cursor: pointer; }
+    .project-card:hover, .tool-card:hover, .service-card:hover { transform: scale(1.03); }
+  </style>
 </head>
 <body>
+
 <!-- ===== NAVBAR ===== -->
-<header>
-  <nav class="navbar">
-    <div class="logo">Adhithyan</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand logo" href="#">Adhithyan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- ===== HERO SECTION ===== -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-image">
+<section class="hero py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- ✅ Image Column (Top on mobile, Left on desktop) -->
+      <div class="col-lg-6 text-center order-1 order-lg-1 mb-4 mb-lg-0">
+         <div class="hero-image">
       <img src="assets/adhi1_png.png" alt="Profile" />
     </div>
-    <div class="hero-text">
-      <h1>Hi, It's <span>Adhithyan</span></h1>
-      <h2>I'm a <span>Flutter developer</span></h2>
-      <p>
-       Hey there! I build beautiful apps using Flutter. Clean code, smooth UX, and modern design are what I aim for in every project..
-      </p>
-     <div class="social-icons">
-  <a href="https://www.linkedin.com/in/adhithyan-p-b-856190330/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://github.com/Adhithyan69" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://www.instagram.com/_adhitxyn_/" target="_blank"><i class="fab fa-instagram"></i></a>
-</div>
-      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="hire-me">Hire Me</button>
-    </div>
-  </div>
-</section>
+      </div>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="about-img">
-      <img src="assets/about_img.jpg" alt="Adhithyan">
-    </div>
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>I’m a motivated Flutter Developer with a passion for crafting responsive, high-performance mobile applications. With a background in software development and hands-on experience using Flutter and Dart, I specialize in building seamless cross-platform experiences that prioritize both performance and design.
-I'm skilled in integrating APIs, managing app state efficiently, and collaborating within agile teams to bring ideas to life. I’m always excited to take on new challenges, solve real-world problems, and contribute to innovative, user-focused projects..</p>
-      <div class="about-buttons">
-        <a href="assets/cv.pdf" download class="btn primary ">Download CV</a>
-        <a href="#contact" class="btn outline">Contact Me</a>
+      <!-- ✅ Text Column (Bottom on mobile, Right on desktop) -->
+      <div class="col-lg-6 text-center text-lg-start order-2 order-lg-2">
+        <div class="hero-text">
+          <h1 class="display-4 fw-bold">Hi, It's <span class="gradient-text">Adhithyan</span></h1>
+          <h2 class="display-6 mb-3">I'm a <span class="text-primary">Flutter developer</span></h2>
+          <p class="lead text-muted">
+            Hey there! I build beautiful apps using Flutter. Clean code, smooth UX, and modern design are what I aim for in every project.
+          </p>
+          <div class="social-icons mb-3">
+            <a href="https://www.linkedin.com/in/adhithyan-p-b-856190330/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Adhithyan69" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/_adhitxyn_/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+          <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="btn btn-outline-primary hire-me">
+            Hire Me
+          </button>
+        </div>
       </div>
     </div>
-  </section>
-  <!-- ===== SERVICES SECTION ===== -->
-<section id="services" class="services-section">
-  <h2 class="section-title">Services</h2>
-  <p class="section-subtitle">
-    Your idea, my code — let’s build something great together.
-  </p>
-  <div class="services-grid"> 
-     <div class="service-card">
-      <img src="https://img.icons8.com/?size=80&id=szOBoOVU3fvT&format=png"/>
-      <h3>App Developing</h3>
-      <span class="service-underline"></span>
-    </div>
-    <div class="service-card">
-      <img src="assets/capcut.png" alt="Photography"/>
-      <h3>Video editng</h3>
-      <span class="service-underline"></span>
-    </div>
-    <div class="service-card">
-      <img src="https://img.icons8.com/?size=60&id=1FdYDpqhZ86g&format=png" alt="Web Developer"/>
-      <h3>Web Development</h3>
-      <span class="service-underline"></span>
-    </div>
-  
-
-  </div>
-</section>
-
-  <!-- Skills Section -->
-<section id="skills" class="skills-section">
-  <h2 class="section-title">My Skills</h2>
-  <p class="section-subtitle">
-   Crafting efficient solutions through clean code and thoughtful design.
-  </p>
-
-  <div class="skills-grid"> 
-     <div class="skill" data-percent="95">
-      <div class="skill-title">Flutter <span>95%</span></div>
-      <div class="skill-bar"><div class="skill-fill"></div></div>
-    </div>
-    <div class="skill" data-percent="90">
-      <div class="skill-title">Dart <span>90%</span></div>
-      <div class="skill-bar"><div class="skill-fill"></div></div>
-    </div>
-    <div class="skill" data-percent="75">
-      <div class="skill-title">Video editng<span>75%</span></div>
-      <div class="skill-bar"><div class="skill-fill"></div></div>
-    </div>
-    <div class="skill" data-percent="45">
-      <div class="skill-title">HTML/CSS <span>45%</span></div>
-      <div class="skill-bar"><div class="skill-fill"></div></div>
-    </div>
-    <div class="skill" data-percent="45">
-      <div class="skill-title">JavaScript <span>45%</span></div>
-      <div class="skill-bar"><div class="skill-fill"></div></div>
-    </div>
-    <div class="skill" data-percent="85">
-      <div class="skill-title">Git <span>85%</span></div>
-      <div class="skill-bar"><div class="skill-fill"></div></div>
-    </div>
   </div>
 </section>
 
 
-  <!-- Tools & Technologies -->
-  <section class="tools">
-  <h2 class="section-title">
-    Tools  & Technologies
-  </h2>
-  <div class="tool-grid">
-     <div class="tool-card">
-      <img src="https://img.icons8.com/?size=80&id=IYQQHplg11Ie&format=png" alt="Flutter">
-      <span>Flutter</span>
-    </div>
-    <div class="tool-card">
-      <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML5">
-      <span>HTML5</span>
-    </div>
-    <div class="tool-card">
-      <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3">
-      <span>CSS3</span>
-    </div>
-    <div class="tool-card">
-      <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript">
-      <span>JavaScript</span>
-    </div>
-    <div class="tool-card">
-      <img src="https://img.icons8.com/color/48/git.png" alt="Git">
-      <span>Git</span>
-    </div>
-    <div class="tool-card">
-      <img src="https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png" alt="VS Code">
-      <span>VS Code</span>
-    </div>
 
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-5">
+      <img src="assets/about_img.jpg" alt="Adhithyan" class="img-fluid shadow about-img" />
+      </div>
+      <div class="col-lg-7">
+        <h2 class="mb-3">About Me</h2>
+        <p>
+          I’m a motivated Flutter Developer with a passion for crafting responsive, high-performance mobile applications. With a background in software development and hands-on experience using Flutter and Dart, I specialize in building seamless cross-platform experiences that prioritize both performance and design.
+        </p>
+        <p>
+          I'm skilled in integrating APIs, managing app state efficiently, and collaborating within agile teams to bring ideas to life. I’m always excited to take on new challenges, solve real-world problems, and contribute to innovative, user-focused projects.
+        </p>
+        <div class="mt-4">
+          <a href="assets/cv.pdf" download class="btn btn-primary me-2 ">Download CV</a>
+          <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Services Section -->
+<section id="services" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-3">Services</h2>
+    <p class="mb-5 text-muted">Your idea, my code — let’s build something great together.</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 service-card">
+          <div class="card-body">
+            <img src="https://img.icons8.com/?size=80&id=szOBoOVU3fvT&format=png" class="mb-3" alt="App Development"/>
+            <h5 class="card-title">App Developing</h5>
+            <div class="service-underline mx-auto mt-2" style="width: 50px; height: 3px;;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 service-card">
+          <div class="card-body">
+            <img src="assets/capcut.png" class="mb-3 mx-auto d-block" style="height: 100px;" alt="Video Editing" />
+            <h5 class="card-title">Video Editing</h5>
+            <div class="service-underline mx-auto mt-2" style="width: 50px; height: 3px; ;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 service-card">
+          <div class="card-body">
+            <img src="https://img.icons8.com/?size=60&id=1FdYDpqhZ86g&format=png" style="height: 100px;" class="mb-3" alt="Web Development"/>
+            <h5 class="card-title">Web Development</h5>
+            <div class="service-underline mx-auto mt-2" style="width: 50px; height: 3px; ;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light skills-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-white">My Skills</h2>
+      <p>Crafting efficient solutions through clean code and thoughtful design.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="mb-2">Flutter <span class="float-end">95%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-2">Dart <span class="float-end">90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-2">Video Editing <span class="float-end">75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-2">HTML/CSS <span class="float-end">45%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 45%"></div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-2">JavaScript <span class="float-end">45%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 45%"></div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-2">Git <span class="float-end">85%</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="projects" class="projects">
   <h2>My Projects</h2>
@@ -193,13 +205,14 @@ lessly.</p>
     </div>
   </div>
 </section>
-<!-- Mini Projects Section -->
-<section id="mini-projects" class="projects">
+
+
+<section id="projects" class="projects">
   <h2>Mini Projects</h2>
   <div class="project-grid">
     <div class="project-card">
       <div class="project-image">
-        <img src="assets/news_app.png" alt="News App" />
+        <img src="assets/news_app.png" alt="Fixit: Service App" />
       </div>
       <div class="project-overlay">
         <h3>News App</h3>
@@ -209,16 +222,17 @@ lessly.</p>
 
     <div class="project-card">
       <div class="project-image">
-        <img src="assets/note_app.png" alt="Notes App" />
+        <img src="assets/note_app.png" alt="Enquiry App for Soften Technologies" />
       </div>
       <div class="project-overlay">
         <h3>Notes App</h3>
         <p>Minimal notes application with local storage and responsive layout.</p>
       </div>
     </div>
-        <div class="project-card">
+
+    <div class="project-card">
       <div class="project-image">
-        <img src="assets/book_search_app.jpg" alt="Book Search App" />
+        <img src="assets/book_search_app.jpg" alt="Flutter App UI" />
       </div>
       <div class="project-overlay">
         <h3>Book Search App</h3>
@@ -228,74 +242,142 @@ lessly.</p>
   </div>
 </section>
 
-
-
-  <!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <h2 class="contact-title">Get In <span class="gradient-text">Touch</span></h2>
-  <div class="contact-container">
-    
-    <!-- Left Side: Contact Info -->
-    <div class="contact-info">
-      <h3>Contact Information</h3>
-      <p>
-        Feel free to reach out to me for any questions or opportunities. I’m always open to discussing new projects.
-      </p>
-      <div class="info-item">
-        <img src="https://img.icons8.com/fluency/24/marker.png"/>
-        <span>palakkad, kerala</span>
+<!-- Tools Section -->
+<section class="py-5 bg-dark text-center">
+  <div class="container">
+    <h2 class="text-white mb-5">
+      Tools & Technologies
+    </h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card tool-card h-100">
+          <div class="card-body p-3">
+            <img src="https://img.icons8.com/?size=80&id=IYQQHplg11Ie&format=png" alt="Flutter" class="mb-2">
+            <span class="d-block">Flutter</span>
+          </div>
+        </div>
       </div>
-      <div class="info-item">
-        <img src="https://img.icons8.com/fluency/24/email.png"/>
-        <span>aadhiadhithyan001@gmail.com</span>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card tool-card h-100">
+          <div class="card-body p-3">
+            <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML5" class="mb-2">
+            <span class="d-block">HTML5</span>
+          </div>
+        </div>
       </div>
-      <div class="info-item">
-        <img src="https://img.icons8.com/fluency/24/phone.png"/>
-        <span>+91 7902262171</span>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card tool-card h-100">
+          <div class="card-body p-3">
+            <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" class="mb-2">
+            <span class="d-block">CSS3</span>
+          </div>
+        </div>
       </div>
-      <h4>Follow Me</h4>
-    
-      <div class="social-icons">
-  <a href="https://www.linkedin.com/in/adhithyan-p-b-856190330/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://github.com/Adhithyan69" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://www.instagram.com/_adhitxyn_/" target="_blank"><i class="fab fa-instagram"></i></a>
-</div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card tool-card h-100">
+          <div class="card-body p-3">
+            <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript" class="mb-2">
+            <span class="d-block">JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card tool-card h-100">
+          <div class="card-body p-3">
+            <img src="https://img.icons8.com/color/48/git.png" alt="Git" class="mb-2">
+            <span class="d-block">Git</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card tool-card h-100">
+          <div class="card-body p-3">
+            <img src="https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png" alt="VS Code" class="mb-2">
+            <span class="d-block">VS Code</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Right Side: Contact Form -->
-    <form name="submit-to-google-sheet" class="contact-form">
-      <div class="form-row">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      </div>
-      <input type="text" name="Subject" placeholder="Subject" required />
-      <textarea name="Message" placeholder="Message" rows="5" required></textarea>
-      <button type="submit" class="btn gradient-btn">Send Message <span>✈</span></button>
-    </form>
-      </div>
+  </div>
 </section>
 
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Adhithyan. All rights reserved.</p>
-  </footer>
+<section id="contact" class="py-5  text-light custom-bg">
+  <div class="container">
+    <h2 class="text-center mb-5">
+      Get In <span class="gradient-text">Touch</span> 
+    </h2>
+    <div class="row g-5">
+      <!-- Left: Contact Info -->
+      <div class="col-md-5">
+        <h3 class="text-white">Contact Information</h3>
+        <p class="text-muted">
+          Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects.
+        </p>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fas fa-map-marker-alt text-primary me-2"></i>
+          <span class="text-muted">Palakkad, Kerala</span>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fas fa-envelope text-primary me-2"></i>
+          <span class="text-muted">aadhiadhithyan001@gmail.com</span>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <i class="fas fa-phone text-primary me-2"></i>
+          <span class="text-muted">+91 7902262171</span>
+        </div>
+        <h4 class="text-white mt-4">Follow Me</h4>
+    <div class="social-icons mb-3">
+            <a href="https://www.linkedin.com/in/adhithyan-p-b-856190330/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Adhithyan69" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/_adhitxyn_/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
 
-<script src="script.js"></script>
-<script src="https://kit.fontawesome.com/9ca00d9c1c.js" crossorigin="anonymous"></script>
+      <!-- Right: Contact Form -->
+      <div class="col-md-7">
+        <form name="submit-to-google-sheet">
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" name="Name" class="form-control bg-dark border-0" placeholder="Your Name" required />
+            </div>
+            <div class="col">
+              <input type="email" name="Email" class="form-control bg-dark border-0" placeholder="Your Email" required />
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" name="Subject" class="form-control bg-dark border-0" placeholder="Subject" required />
+          </div>
+          <div class="mb-3">
+            <textarea name="Message" class="form-control bg-dark border-0" placeholder="Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg w-100 gradient-btn">
+            Send Message <span>✈</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 Adhithyan. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzdrJx9G70nuHbgu22TVfFAgcJ3fSDeuBXcYBJiWgmGtC6DV8SQXAA6BOHUpE1EeBiU4Q/exec';
   const form = document.forms['submit-to-google-sheet'];
-
-  form.addEventListener('submit', e => {
+  form?.addEventListener('submit', e => {
     e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => {
         alert("Message sent successfully!");
         form.reset();
       })
       .catch(error => {
         alert("Error!", error.message);
-        console.error('Error!', error.message);
       });
   });
 </script>
